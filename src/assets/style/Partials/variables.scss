@@ -1,0 +1,31 @@
+$brand-base-color: #ffffff;
+$brand-primary-dark: #311852;
+$brand-primary-light: #4d36dc;
+$brand-primary3-orange: #ff7a1f;
+$brand-secondary-base: #f7f0ff;
+$brand-secondary-violet: #8d829c;
+$brand-secondary-pink: #ffdfed;
+
+
+@mixin button{
+        padding: 1em;
+        margin-left: 1em;
+        border-radius: 20px;
+        border: 1px solid white;
+        background-color: $brand-primary-dark;
+        color: $brand-base-color;
+}
+
+@mixin glowing-btn{
+        background-color: $brand-secondary-base;
+        color: $brand-primary-dark;
+        box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+        cursor: pointer;
+}
+
+@mixin card{
+        padding-top: 1em;
+        width: 500px;
+        height: 400px;
+        border-radius: 20px;
+}
