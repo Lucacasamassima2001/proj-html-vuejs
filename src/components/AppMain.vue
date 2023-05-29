@@ -1,11 +1,23 @@
 <script>
 import { store } from '../store';
+import AppStatsVue from './AppStats.vue';
+import AppOurworks from './AppOurworks.vue';
+import AppClients from './AppClients.vue';
+import Appform from './Appform.vue';
 export default {
     
     data(){
         return {
             store,
         }
+    },
+
+
+    components:{
+        AppStatsVue,
+        AppOurworks,
+        AppClients,
+        Appform,
     }
     
 }
@@ -15,39 +27,45 @@ export default {
 
 
 <template>
-  <div class="container-storytelling">
-    <img class="smart" src="../assets/img/smart.png" alt="">
-    <div class="presentation">
-        <h3>Our love for animation</h3>
-        <h2>
-        We're Storytelling
-        <br>
-        Experts With Creative
-        <br>
-        Smarts
-        </h2>
-        <p>Our culture inspires the creative and innovative spirit found throughout our Studio.We brathe life into new ideas!</p>
-        <div class="cards">
-            <div class="card-pink">
-                <img src="../assets/img/smart1.png" alt="">
-                <h3>3D modeling</h3>
-                <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
+    <main>
+            <div class="container-storytelling">
+                <img class="smart" src="../assets/img/smart.png" alt="">
+                <div class="presentation">
+                    <h3>Our love for animation</h3>
+                    <h2>
+                    We're Storytelling
+                    <br>
+                    Experts With Creative
+                    <br>
+                    Smarts
+                    </h2>
+                    <p>Our culture inspires the creative and innovative spirit found throughout our Studio.We brathe life into new ideas!</p>
+                    <div class="cards">
+                        <div class="card-pink">
+                            <img src="../assets/img/smart1.png" alt="">
+                            <h3>3D modeling</h3>
+                            <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
+                        </div>
+                        <div class="card-blue">
+                            <img src="../assets/img/smart2.png" alt="">
+                            <h3>3D modeling</h3>
+                            <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
+                        </div>
+                        <div class="card-pink">
+                            <img src="../assets/img/smart3.png" alt="">
+                            <h3>3D modeling</h3>
+                            <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
+                        </div>
+                        <img class="rocket" src="../assets/img/smart4.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="card-blue">
-                <img src="../assets/img/smart2.png" alt="">
-                <h3>3D modeling</h3>
-                <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
-            </div>
-            <div class="card-pink">
-                <img src="../assets/img/smart3.png" alt="">
-                <h3>3D modeling</h3>
-                <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
-            </div>
-            <img class="rocket" src="../assets/img/smart4.png" alt="">
-        </div>
-    </div>
-    
-  </div>
+    </main>
+
+  <AppStatsVue/>
+  <AppOurworks/>
+  <AppClients/>
+  <Appform/>
 </template>
 
 
@@ -57,6 +75,7 @@ export default {
 .container-storytelling{
     position: relative;
     margin-top: 500px;
+    margin-bottom: 400px;
     height: 500px;
     text-align: center;
 }

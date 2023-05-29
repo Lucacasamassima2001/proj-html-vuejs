@@ -15,7 +15,7 @@ export default {
 
 
 <template>
-    <header>
+    <header id="Homepage">
         <nav>
             <div class="img-">
                 <img src="../assets/img/logo.png" alt="">
@@ -37,7 +37,9 @@ export default {
             </div>
             <img src="../assets/img/middle.png" alt="">
         </div>
-    </header>  
+        <img class="bottom" src="../assets/img/shape-bottom.png" alt="">
+    </header>
+    
 </template>
 
 
@@ -46,17 +48,16 @@ export default {
 @use '../assets/style/Partials/variables.scss' as *;
 
 header{
-    height: 600px;
+    height: 700px;
     background-image: url(../assets/img/banner-bg.png);
     padding: 1em;
+    position: relative;
 }
 
 
 nav{
-    width: 70%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between;
+    @include nav;
+
 }
 
 
@@ -65,6 +66,7 @@ nav{
     align-items: center;
     
     button{
+        width: 120px;
         @include button;
     }
     button:hover{
@@ -73,13 +75,11 @@ nav{
 }
 
 ul{
-    display: flex;
-    gap: 1em;
-    list-style: none;
+    @include list;
     color: $brand-base-color;
     
     li:hover{
-        color: $brand-primary3-orange;
+        color: $brand-primary-orange;
         cursor: pointer;
     }
 
@@ -91,6 +91,7 @@ ul{
     width: 60%;
     margin-inline: auto;
     text-align: center;
+    position: relative;
     
     h1{
         margin-top: .2em;
@@ -99,7 +100,7 @@ ul{
     }
     
     h3{
-        color: $brand-primary3-orange;
+        color: $brand-primary-orange;
         margin-top: .2em;
     }
     
@@ -112,6 +113,7 @@ ul{
     
     
     button{
+        width: 120px;
         margin-top: .2em;
         @include button;
     }
@@ -121,9 +123,19 @@ ul{
     }
     img{
         margin-top: 2em;
+        z-index: 99;
+        position: absolute;
+        left: -2%;
     }
 
 }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+        margin-top: 11em;
+        z-index: 9;
+    }
 </style>
 
 
