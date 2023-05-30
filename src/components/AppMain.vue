@@ -5,6 +5,7 @@ import AppOurworks from './AppOurworks.vue';
 import AppClients from './AppClients.vue';
 import Appform from './Appform.vue';
 import AppCrouselprocessVue from './AppCrouselprocess.vue';
+import AppTeamVue from './AppTeam.vue';
 export default {
     
     data(){
@@ -20,6 +21,7 @@ export default {
         AppClients,
         Appform,
         AppCrouselprocessVue,
+        AppTeamVue,
     }
     
 }
@@ -67,6 +69,7 @@ export default {
   <AppStatsVue/>
   <AppOurworks/>
   <AppCrouselprocessVue/>
+  <AppTeamVue/>
   <AppClients/>
   <Appform/>
 </template>

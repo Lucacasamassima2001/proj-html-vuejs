@@ -153,6 +153,25 @@ export const store= reactive(
                 text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
                 id: 1
             },
+        ],
+
+        TeamMembers:[
+            {
+                image:'../src/assets/img/team1.png',
+                name:'Robert Coleman',
+                job: 'Owner & creative Director'
+            },
+            {
+                image:'../src/assets/img/team2.png',
+                name:'Don Woods',
+                job: 'Administrator'
+            },
+            {
+                image:'../src/assets/img/team4.png',
+                name:'Tomas Nash',
+                job: '2d animator & Compositor'
+            },
+
         ]
 
     }

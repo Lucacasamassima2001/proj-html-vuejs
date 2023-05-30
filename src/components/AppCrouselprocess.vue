@@ -58,6 +58,7 @@ export default {
                     <button @click="showPrevSlide"><i class="fa-solid fa-arrow-left"></i></button>
                     <button @click="showNextSlide"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
+                <img class="rocket" src="../assets/img/smart4.png" alt="">
             </div>
         </div>
 </template>
@@ -188,5 +189,13 @@ button:active{
     background-color: $brand-primary-orange;
 
 }
+
+
+.rocket{
+    position: absolute;
+    right: 20px;
+    height: 120px;
+}
+
 
 </style>
