@@ -17,7 +17,7 @@ export default {
 
 <template>
     <div class="stats">
-        <img src="../assets/img/shape-top.png" alt="">
+        <img style="width: 100%;" src="../assets/img/shape-top.png" alt="">
         <h1>Anidio Quick Facts</h1>
         <div class="stats-container">
             <div class="stat" v-for="fact in store.QuickFacts" :key="fact.data"  >
@@ -69,7 +69,8 @@ export default {
 
     
     .bottom{
-        margin-top: 7.5em;
+        width: 100%;
+        margin-top: 9em;
         transform: rotate(3.142rad);
     }
 

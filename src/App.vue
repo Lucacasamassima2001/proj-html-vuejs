@@ -67,3 +67,7 @@ export default {
 }
 
 </style>
+
+
+
+<!-- TO DO CAROUSEL/ HOVERS ADD IMAGES/BACKGROUNDS AND VIDEO TAG -->

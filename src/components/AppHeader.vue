@@ -48,7 +48,7 @@ export default {
 @use '../assets/style/Partials/variables.scss' as *;
 
 header{
-    height: 700px;
+    height: 650px;
     background-image: url(../assets/img/banner-bg.png);
     padding: 1em;
     position: relative;
@@ -130,14 +130,14 @@ ul{
 
 }
     .bottom{
+        width: 100%;
         position: absolute;
-        bottom: 0;
-        left: -50px;
-        margin-top: 11em;
+        bottom: -10px;
+        left: 0;
+        margin-top: 12em;
         z-index: 9;
     }
 </style>
 
 
 
-<!-- TO DO IMAGES ON BACKGROUND AND VIDEO TAG -->

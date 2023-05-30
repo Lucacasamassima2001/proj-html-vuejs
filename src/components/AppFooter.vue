@@ -84,6 +84,13 @@ footer{
             border-radius: 50%;
         }
 
+        
+        i:hover{
+            transform: scale(1.2);
+            background-color: $brand-primary-orange;
+            color: $brand-base-color;
+            border: 1px solid $brand-primary-orange;
+        }
 
     }
 

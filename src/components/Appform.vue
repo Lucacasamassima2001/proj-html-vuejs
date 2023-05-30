@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="container">
-        <img src="../assets/img/shape-top.png" alt="">
+        <img style="width: 100%;" src="../assets/img/shape-top.png" alt="">
         <h2>We Create New Worlds!</h2>
         <h1>Want Tips On Your Storytelling?</h1>
         <p>Join our newsletter for tips on how to elevate your brand through storytelling</p>
@@ -58,7 +58,8 @@ export default {
         border: 1px solid $brand-primary-dark
     }
     .bottom{
-        margin-top: 8em;
+        width: 100%;
+        margin-top: 9em;
         transform: rotate(3.142rad);
     }
 }
