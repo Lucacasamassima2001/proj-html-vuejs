@@ -38,7 +38,7 @@ export default {
         <h1>Let Us Animate Your <br> Project</h1>
         <p>We create New worlds! Let's collaborate and create engaging, effective, <br>award-winning animations</p>
         <div class="slider">
-            <div :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers" :key="member.name" >
+            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers" :key="member.name" >
                 <img :src="member.image" alt="">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.job  }}</p>
@@ -67,6 +67,8 @@ export default {
     margin-bottom: 300px;
     text-align: center;
     margin-top: 100px;
+    position: relative;
+
     
     h2{
         margin-bottom: .5em;
@@ -87,17 +89,17 @@ export default {
 
 
 .slider{
-    position: relative;
     margin-top: 2em;
-    width: 65%;
     margin-inline: auto;
     display: flex;
-    gap: 10em;
+    justify-content: center;
+    gap: 8em;
 }
 .member{
     background-color: $brand-secondary-pink;
     box-shadow: -0px 30px 2px 40px $brand-secondary-pink;
     border-radius: 20px;
+    cursor: pointer;
     
     img{
         border-radius: 20px;
@@ -132,6 +134,12 @@ export default {
             font-size: 1.2em;
             color: $brand-primary-light;
         }
+        i:hover{
+            transform: scale(1.2);
+            background-color: $brand-primary-orange;
+            color: $brand-base-color;
+            border: 1px solid $brand-primary-orange;
+        }
 
     }
 }
@@ -139,7 +147,7 @@ export default {
 .controls{
     position: absolute;
     bottom: -200px;
-    left: 40%;
+    left: 43%;
     display: flex;
     align-items: center;
     gap: 1em;

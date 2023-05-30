@@ -94,8 +94,8 @@ export default {
     top: -150px;
 }
 .presentation{
-    margin-inline-start: 500px;
-    width: 40%;
+    margin-inline-start: 35%;
+    width: 55%;
     h3{
         margin-bottom: 1em;
         color: $brand-primary-dark;
@@ -120,7 +120,6 @@ export default {
 
 .cards{
     position: relative;
-    width: 900px;
     margin-top: 2em;
     display: flex;
     gap: 2em;

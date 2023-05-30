@@ -24,6 +24,7 @@ export default {
                 <h1>{{ fact.num  }}+</h1>
                 <h2>{{ fact.data }}</h2>
             </div>
+            <img class="globe" src="../assets/img/globe.png" alt="">
         </div>
         <img class="bottom" src="../assets/img/shape-top.png" alt="">
     </div>
@@ -44,10 +45,13 @@ export default {
         padding-top: 1em;
         color: $brand-base-color;
     }
+    
 }
 
 
 .stats-container{
+    position: relative;
+
     margin-top: 70px;
     width: 80%;
     margin-inline: auto;
@@ -74,4 +78,11 @@ export default {
         transform: rotate(3.142rad);
     }
 
+    .globe{
+        position: absolute;
+        left: 35%;
+        bottom: -55%;
+        height: 500px;
+    }
+    
 </style>

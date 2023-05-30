@@ -37,7 +37,18 @@ export default {
             </div>
             <img src="../assets/img/middle.png" alt="">
         </div>
+
+
+        <!-- POSITIONED BACKGROUND IMAGES -->
         <img class="bottom" src="../assets/img/shape-bottom.png" alt="">
+        <img class="left-man" src="../assets/img/left-man.png" alt="">
+        <img class="globe" src="../assets/img/globe.png" alt="">
+        <img class="globe-2" src="../assets/img/globe2.png" alt="">
+        <img class="globe-3" src="../assets/img/globe3.png" alt="">
+        <img class="dots-left" src="../assets/img/dots-left.png" alt="">
+        <img class="right-man" src="../assets/img/right-man.png" alt="">
+        <img class="light" src="../assets/img/light.png" alt="">
+        <img class="dots-right" src="../assets/img/dots-right.png" alt="">
     </header>
     
 </template>
@@ -64,6 +75,7 @@ nav{
 .options-container{
     display: flex;
     align-items: center;
+    z-index: 99;
     
     button{
         width: 120px;
@@ -91,7 +103,7 @@ ul{
     width: 60%;
     margin-inline: auto;
     text-align: center;
-    position: relative;
+    z-index: 99;
     
     h1{
         margin-top: .2em;
@@ -125,7 +137,7 @@ ul{
         margin-top: 2em;
         z-index: 99;
         position: absolute;
-        left: -2%;
+        right: 18%;
     }
 
 }
@@ -137,6 +149,60 @@ ul{
         margin-top: 12em;
         z-index: 9;
     }
+
+    
+    .left-man{
+        position: absolute;
+        left: 50px;
+        bottom: 100px;
+        height: 350px;
+    }
+
+    
+    .globe{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        height: 100px;
+    }
+    .globe-2{
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        height: 100px;
+    }
+    .globe-3{
+        position: absolute;
+        left: 40%;
+        top: -35%;
+        z-index: 1;
+    }
+    .dots-left{
+        position: absolute;
+        left: 10%;
+        top: 30%;
+        z-index: 1;
+    }
+
+    .dots-right{
+        position: absolute;
+        right: 10%;
+        top: 20%;
+        z-index: 1;
+    }
+
+    .right-man{
+        position: absolute;
+        right: 5%;
+        bottom: 25%;
+        height: 350px;
+    }
+    .light{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+
 </style>
 
 

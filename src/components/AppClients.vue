@@ -57,7 +57,7 @@ export default {
             margin-top: 2em;
             display: flex;
             justify-content: center;
-            gap: 2em;
+            gap: .8em;
         }
     }
 </style>

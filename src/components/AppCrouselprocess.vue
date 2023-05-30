@@ -45,7 +45,7 @@ export default {
                 <h1>Our Process For <br> Your Animation <br> Production</h1>
                 <p>We have an effective process for working on animation</p>
                 <div class="carousel">
-                    <div :class="{active: index == activeIndex}" class="card" v-for="(process, index) in store.Ourprocess" :key="process.title"  >
+                    <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="card" v-for="(process, index) in store.Ourprocess" :key="process.title"  >
                         <div class="thumb-img">
                             <img  :src="process.image" :alt="process.title">
                         </div>
@@ -76,11 +76,11 @@ export default {
 .img-container{
     width: 50%;
     position: absolute;
-    left: -80px;
+    left: -300px;
     top: -10px;
     
     img{
-        height: 600px;
+        height: 800px;
     }
 
 }
@@ -88,7 +88,7 @@ export default {
 
 .slider{
     width: 50%;
-    margin-left: 45em;
+    margin-left: 40%;
     
     h2{
         margin-bottom: 1em;
@@ -119,6 +119,7 @@ export default {
     }
 
 .card{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
