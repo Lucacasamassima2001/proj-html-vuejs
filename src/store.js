@@ -136,6 +136,23 @@ export const store= reactive(
                 name:'Contact',
                 id:24
             },
+        ],
+
+        // CAROUSEL OUR PROCESS
+        Ourprocess:[
+            
+            {
+                image: '../src/assets/img/process1.png',
+                title:'Pre-production',
+                text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
+                id: 4
+            },
+            {
+                image: '../src/assets/img/process2.png',
+                title:'Scripting',
+                text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
+                id: 1
+            },
         ]
 
     }
