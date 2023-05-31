@@ -4,38 +4,7 @@ export const store= reactive(
     
     {   
 
-        // OPZIONI NAV HEADER
         
-        NavOptions:[
-            {
-                name:'Home',
-                id:1
-            },
-            {
-                name:'About Us',
-                id:11
-            },
-            {
-                name:'Portfolio',
-                id:12
-            },
-            {
-                name:'Our Process',
-                id:13
-            },
-            {
-                name:'Pricing',
-                id:14
-            },
-            {
-                name:'Blog',
-                id:15
-            },
-            {
-                name:'Contact',
-                id:16
-            },
-        ],
 
         // STATISTICHE SUL TEAM
         QuickFacts:[
@@ -120,16 +89,31 @@ export const store= reactive(
                 image: '../src/assets/img/process1.png',
                 title:'Pre-production',
                 text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
-                id: 4
+                id: 1
             },
             {
                 image: '../src/assets/img/process2.png',
                 title:'Scripting',
                 text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
-                id: 1
+                id: 3
             },
         ],
-
+        Ourprocess1:[
+            
+            {
+                image: '../src/assets/img/process2.png',
+                title:'Scripting',
+                text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
+                id: 2
+            },
+            {
+                image: '../src/assets/img/process1.png',
+                title:'Pre-production',
+                text:'Well take your idea and create a technical script which consist of action notes and nimation descriptions',
+                id: 4
+            },
+        ],
+        
         TeamMembers:[
             {
                 image:'../src/assets/img/team1.png',
@@ -144,6 +128,40 @@ export const store= reactive(
             {
                 image:'../src/assets/img/team4.png',
                 name:'Tomas Nash',
+                job: 'Owner & creative Director'
+            },
+        ],
+        TeamMembers1:[
+            {
+                image:'../src/assets/img/team4.png',
+                name:'Tomas Nash',
+                job: 'Owner & creative Director'
+            },
+            {
+                image:'../src/assets/img/team1.png',
+                name:'Robert Coleman',
+                job: 'Owner & creative Director'
+            },
+            {
+                image:'../src/assets/img/team2.png',
+                name:'Don Woods',
+                job: 'Administrator'
+            },
+        ],
+        TeamMembers2:[
+            {
+                image:'../src/assets/img/team2.png',
+                name:'Don Woods',
+                job: 'Administrator'
+            },
+            {
+                image:'../src/assets/img/team4.png',
+                name:'Tomas Nash',
+                job: 'Administrator'
+            },
+            {
+                image:'../src/assets/img/team1.png',
+                name:'Robert Coleman',
                 job: '2d animator & Compositor'
             },
         ]

@@ -53,6 +53,14 @@ export default {
                         <p>{{ process.text }}</p>
                         <div class="id">{{ process.id }}</div>
                     </div>
+                    <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="card" v-for="(process, index) in store.Ourprocess1" :key="process.title"  >
+                        <div class="thumb-img">
+                            <img  :src="process.image" :alt="process.title">
+                        </div>
+                        <h2>{{ process.title }}</h2>
+                        <p>{{ process.text }}</p>
+                        <div class="id">{{ process.id }}</div>
+                    </div>
                 </div>
                 <div class="controls">
                     <button @click="showPrevSlide"><i class="fa-solid fa-arrow-left"></i></button>
@@ -113,23 +121,29 @@ export default {
     display: flex;
     gap: 1em;
 }
-.active{
-        background-color: $brand-secondary-pink;
+.card.active{
+        // background-color: $brand-secondary-pink;
         // transform: scale(1.1);
+        display: block;
     }
+    
+    .card:hover{
+        background-color: $brand-secondary-pink;
 
+    }
 .card{
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 350px;
+    height: 380px;
     width: 250px;
     border: 1px solid lightgrey;
     border-radius: 20px;
     padding: 1em;
     position: relative;
+    display: none;
     h2{
         margin-top: 1em;
         margin-bottom: 1em;

@@ -48,6 +48,26 @@ export default {
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
+            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers1" :key="member.name" >
+                <img :src="member.image" alt="">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.job  }}</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers2" :key="member.name" >
+                <img :src="member.image" alt="">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.job  }}</p>
+                <div class="socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
             <div class="controls">
                     <button @click="showPrevSlide"><i class="fa-solid fa-arrow-left"></i></button>
                     <span :value="activeIndex" :class="{activedot: index == activeIndex}"  v-for="(member,index) in store.TeamMembers" :key="member.name"  class="selected-member"></span>
