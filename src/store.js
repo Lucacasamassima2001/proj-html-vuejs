@@ -128,14 +128,14 @@ export const store= reactive(
             {
                 image:'../src/assets/img/team4.png',
                 name:'Tomas Nash',
-                job: 'Owner & creative Director'
+                job: '2d animator & Compositor'
             },
         ],
         TeamMembers1:[
             {
                 image:'../src/assets/img/team4.png',
                 name:'Tomas Nash',
-                job: 'Owner & creative Director'
+                job: '2d animator & Compositor'
             },
             {
                 image:'../src/assets/img/team1.png',
@@ -157,12 +157,12 @@ export const store= reactive(
             {
                 image:'../src/assets/img/team4.png',
                 name:'Tomas Nash',
-                job: 'Administrator'
+                job: '2d animator & Compositor'
             },
             {
                 image:'../src/assets/img/team1.png',
                 name:'Robert Coleman',
-                job: '2d animator & Compositor'
+                job: 'Owner & creative Director'
             },
         ]
 
