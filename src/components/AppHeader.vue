@@ -1,13 +1,49 @@
 <script>
-import {store} from '../store';
-
+// import {store} from '../store';
+import AppHnavOptionsVue from './AppHnavOptions.vue';
 export default {
     data(){
         
         return{
-            store,
+            // store,
+            NavOptions:[
+            {
+                name:'Home',
+                id:1
+            },
+            {
+                name:'About Us',
+                id:11
+            },
+            {
+                name:'Portfolio',
+                id:12
+            },
+            {
+                name:'Our Process',
+                id:13
+            },
+            {
+                name:'Pricing',
+                id:14
+            },
+            {
+                name:'Blog',
+                id:15
+            },
+            {
+                name:'Contact',
+                id:16
+            },
+        ],
         }
     },
+
+    
+    components:{
+        AppHnavOptionsVue,
+    }
+
 }
 </script>
 
@@ -21,11 +57,15 @@ export default {
                 <img src="../assets/img/logo.png" alt="">
             </div>
             <div class="options-container">
-                <ul class="options">
-                    <li v-for="option in store.NavOptions" :key="option.id">{{ option.name }} </li>
-                </ul>
+                <AppHnavOptionsVue
+                v-for="option in NavOptions"
+                :key="option.id"
+                :opname="option.name"
+                />
                 <button>Get a Quote</button>
             </div>
+            
+
         </nav>
         <div class="container-titles">
             <h3>Imagine, Create, Experience</h3>
@@ -70,32 +110,21 @@ nav{
     @include nav;
 
 }
-
-
-.options-container{
-    display: flex;
-    align-items: center;
-    z-index: 99;
-    
-    button{
+button{
         width: 120px;
         @include button;
     }
     button:hover{
         @include glowing-btn;
     }
+
+.options-container{
+    display: flex;
+    align-items: center;
+    z-index: 99;
 }
 
-ul{
-    @include list;
-    color: $brand-base-color;
-    
-    li:hover{
-        color: $brand-primary-orange;
-        cursor: pointer;
-    }
 
-}
 
 
 .container-titles{
@@ -189,6 +218,7 @@ ul{
         right: 10%;
         top: 20%;
         z-index: 1;
+        height: 300px;
     }
 
     .right-man{

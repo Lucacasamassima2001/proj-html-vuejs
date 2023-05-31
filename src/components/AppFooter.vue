@@ -1,12 +1,38 @@
 <script>
-import { store } from '../store';
-
+import AppFnavOptions from './AppFnavOptions.vue';
 export default {
     data(){
         return {
-            store,
+            FooterOption:[
+            
+            {
+                name:'About us',
+                id:2
+            },
+            {
+                name:'portfolio',
+                id:21
+            },
+            {
+                name:'Pricing',
+                id:22
+            },
+            {
+                name:'Career',
+                id:23
+            },
+            {
+                name:'Contact',
+                id:24
+            },
+        ],
         }
     },
+
+    components:{
+        AppFnavOptions,
+    }
+
 }
 </script>
 
@@ -19,10 +45,15 @@ export default {
             </div>
             <div class="options-container">
                 <ul class="options">
-                    <li v-for="option in store.FooterOption" :key="option.id">{{ option.name }} </li>
-                </ul>
+                    <AppFnavOptions
+                    v-for="option in FooterOption"
+                    :key="option.id"
+                    :opname="option.name"
+                />
+                </ul> 
             </div>
         </nav>
+        
         <div class="subnav">
             <div class="copyright">Copyright &#169; 2022 <span class="soft-virus">Softvirus</span>. All rights reserverd</div>
             <div class="socials">

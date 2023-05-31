@@ -113,31 +113,6 @@ export const store= reactive(
             },
         ],
         
-        // OPZIONI DEL FOOTER
-        FooterOption:[
-            
-            {
-                name:'About us',
-                id:2
-            },
-            {
-                name:'portfolio',
-                id:21
-            },
-            {
-                name:'Pricing',
-                id:22
-            },
-            {
-                name:'Career',
-                id:23
-            },
-            {
-                name:'Contact',
-                id:24
-            },
-        ],
-
         // CAROUSEL OUR PROCESS
         Ourprocess:[
             
@@ -171,7 +146,6 @@ export const store= reactive(
                 name:'Tomas Nash',
                 job: '2d animator & Compositor'
             },
-
         ]
 
     }

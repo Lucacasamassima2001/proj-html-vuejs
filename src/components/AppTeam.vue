@@ -100,7 +100,8 @@ export default {
     box-shadow: -0px 30px 2px 40px $brand-secondary-pink;
     border-radius: 20px;
     cursor: pointer;
-    
+    // DISPLAY ONE CARD
+    display: none;
     img{
         border-radius: 20px;
     }
@@ -185,6 +186,8 @@ button:active{
 .active{
         // background-color: $brand-secondary-pink;
         transform: scale(1.1);
+        // DISPLAY ONE CARD
+        display: block;
     }
 
     

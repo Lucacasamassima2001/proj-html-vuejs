@@ -17,16 +17,19 @@ export default {
 
 <template>
     <div class="stats">
-        <img style="width: 100%;" src="../assets/img/shape-top.png" alt="">
-        <h1>Anidio Quick Facts</h1>
-        <div class="stats-container">
+        <!-- <img class="globe" src="../assets/img/globe.png" alt=""> -->
+        <div class="globe">
+            <img style="width: 100%;" src="../assets/img/shape-top.png" alt="">
+            <h1>Anidio Quick Facts</h1>
+            <div class="stats-container">
             <div class="stat" v-for="fact in store.QuickFacts" :key="fact.data"  >
                 <h1>{{ fact.num  }}+</h1>
                 <h2>{{ fact.data }}</h2>
             </div>
-            <img class="globe" src="../assets/img/globe.png" alt="">
         </div>
-        <img class="bottom" src="../assets/img/shape-top.png" alt="">
+        <img class="bottom" src="../assets/img/shape-bottom.png" alt="">
+        </div>
+        
     </div>
 </template>
 
@@ -39,6 +42,7 @@ export default {
     height: 600px;
     background-image: url(../assets/img/banner-bg.png);
     text-align: center;
+    position: relative;
     
     h1{
         font-size: 4em;
@@ -49,14 +53,20 @@ export default {
 }
 
 
+.globe{
+    height: 100%;
+    background-image: url(../assets/img/globe.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+}
 .stats-container{
-    position: relative;
-
     margin-top: 70px;
     width: 80%;
     margin-inline: auto;
     display: flex;
     gap: 1em;
+    
 
 }
 
@@ -74,15 +84,15 @@ export default {
     
     .bottom{
         width: 100%;
-        margin-top: 9em;
-        transform: rotate(3.142rad);
+        margin-top: 8.3em;
     }
 
-    .globe{
-        position: absolute;
-        left: 35%;
-        bottom: -55%;
-        height: 500px;
-    }
+    // .globe{
+    //     position: fixed;
+    //     left: 35%;
+    //     bottom: 10%;
+    //     height: 500px;
+    //     z-index: 1;
+    // }
     
 </style>

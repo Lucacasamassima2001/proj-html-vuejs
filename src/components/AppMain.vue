@@ -6,6 +6,7 @@ import AppClients from './AppClients.vue';
 import Appform from './Appform.vue';
 import AppCrouselprocessVue from './AppCrouselprocess.vue';
 import AppTeamVue from './AppTeam.vue';
+
 export default {
     
     data(){
