@@ -53,12 +53,12 @@ export default {
                         </div>
                         <div class="card-blue">
                             <img src="../assets/img/smart2.png" alt="">
-                            <h3>3D modeling</h3>
+                            <h3>Collaboration</h3>
                             <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                         </div>
                         <div class="card-pink">
                             <img src="../assets/img/smart3.png" alt="">
-                            <h3>3D modeling</h3>
+                            <h3>Creativity</h3>
                             <p>We constantly ask questions. It helps us shape your story and deliver the results you crave. Yep, we'll drill deep to deliver above and beyond your expectations.</p>
                         </div>
                         <img class="rocket" src="../assets/img/smart4.png" alt="">
