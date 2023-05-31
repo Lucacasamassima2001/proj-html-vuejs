@@ -114,57 +114,74 @@ export const store= reactive(
             },
         ],
         
-        TeamMembers:[
+        // TEAMS WITH MEMBERS
+        teams:[
+            
             {
-                image:'../src/assets/img/team1.png',
-                name:'Robert Coleman',
-                job: 'Owner & creative Director'
+                id:1,
+                TeamMembers:[
+                    {
+                        image:'../src/assets/img/team1.png',
+                        name:'Robert Coleman',
+                        job: 'Owner & creative Director'
+                    },
+                    {
+                        image:'../src/assets/img/team2.png',
+                        name:'Don Woods',
+                        job: 'Administrator'
+                    },
+                    {
+                        image:'../src/assets/img/team4.png',
+                        name:'Tomas Nash',
+                        job: '2d animator & Compositor'
+                    },
+                ],
             },
+            
             {
-                image:'../src/assets/img/team2.png',
-                name:'Don Woods',
-                job: 'Administrator'
+                id:2,
+                TeamMembers1:[
+                    {
+                        image:'../src/assets/img/team4.png',
+                        name:'Tomas Nash',
+                        job: '2d animator & Compositor'
+                    },
+                    {
+                        image:'../src/assets/img/team1.png',
+                        name:'Robert Coleman',
+                        job: 'Owner & creative Director'
+                    },
+                    {
+                        image:'../src/assets/img/team2.png',
+                        name:'Don Woods',
+                        job: 'Administrator'
+                    },
+                ],
             },
+            
             {
-                image:'../src/assets/img/team4.png',
-                name:'Tomas Nash',
-                job: '2d animator & Compositor'
-            },
-        ],
-        TeamMembers1:[
-            {
-                image:'../src/assets/img/team4.png',
-                name:'Tomas Nash',
-                job: '2d animator & Compositor'
-            },
-            {
-                image:'../src/assets/img/team1.png',
-                name:'Robert Coleman',
-                job: 'Owner & creative Director'
-            },
-            {
-                image:'../src/assets/img/team2.png',
-                name:'Don Woods',
-                job: 'Administrator'
-            },
-        ],
-        TeamMembers2:[
-            {
-                image:'../src/assets/img/team2.png',
-                name:'Don Woods',
-                job: 'Administrator'
-            },
-            {
-                image:'../src/assets/img/team4.png',
-                name:'Tomas Nash',
-                job: '2d animator & Compositor'
-            },
-            {
-                image:'../src/assets/img/team1.png',
-                name:'Robert Coleman',
-                job: 'Owner & creative Director'
-            },
+                id:3,
+                TeamMembers2:[
+                    {
+                        image:'../src/assets/img/team2.png',
+                        name:'Don Woods',
+                        job: 'Administrator'
+                    },
+                    {
+                        image:'../src/assets/img/team4.png',
+                        name:'Tomas Nash',
+                        job: '2d animator & Compositor'
+                    },
+                    {
+                        image:'../src/assets/img/team1.png',
+                        name:'Robert Coleman',
+                        job: 'Owner & creative Director'
+                    },
+                ]
+            }
+            
         ]
+        
 
     }
 );

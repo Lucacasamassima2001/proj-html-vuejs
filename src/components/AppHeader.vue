@@ -208,7 +208,7 @@ button{
     }
     .dots-left{
         position: absolute;
-        left: 10%;
+        left: 7%;
         top: 30%;
         z-index: 1;
     }

@@ -12,7 +12,7 @@ export default {
         showNextSlide () {
             this.activeIndex++
         
-        if (this.activeIndex >= store.TeamMembers.length) {
+        if (this.activeIndex >= store.teams.length) {
         this.activeIndex = 0;
         }},
         
@@ -20,7 +20,7 @@ export default {
             this.activeIndex--
         
         if (this.activeIndex < 0) {
-            this.activeIndex = store.TeamMembers.length - 1;
+            this.activeIndex = store.teams.length - 1;
         }},
         
         setActiveIndex(index) { 
@@ -38,7 +38,8 @@ export default {
         <h1>Let Us Animate Your <br> Project</h1>
         <p>We create New worlds! Let's collaborate and create engaging, effective, <br>award-winning animations</p>
         <div class="slider">
-            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers" :key="member.name" >
+            <div  :class="{active: index == activeIndex}" v-for="(team, index) in store.teams" :key="team.id" class="team" @click="setActiveIndex(index)">
+                <div   class="member" v-for="(member) in team.TeamMembers" :key="member.name" >
                 <img :src="member.image" alt="">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.job  }}</p>
@@ -48,7 +49,7 @@ export default {
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
-            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers1" :key="member.name" >
+            <div   class="member" v-for="(member) in team.TeamMembers1" :key="member.name" >
                 <img :src="member.image" alt="">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.job  }}</p>
@@ -58,7 +59,7 @@ export default {
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
-            <div @click="setActiveIndex(index)" :class="{active: index == activeIndex}" class="member" v-for="(member, index) in store.TeamMembers2" :key="member.name" >
+            <div   class="member" v-for="(member) in team.TeamMembers2" :key="member.name" >
                 <img :src="member.image" alt="">
                 <h3>{{ member.name }}</h3>
                 <p>{{ member.job  }}</p>
@@ -68,9 +69,12 @@ export default {
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
+            </div>
+            
+            
             <div class="controls">
                     <button @click="showPrevSlide"><i class="fa-solid fa-arrow-left"></i></button>
-                    <span :value="activeIndex" :class="{activedot: index == activeIndex}"  v-for="(member,index) in store.TeamMembers" :key="member.name"  class="selected-member"></span>
+                    <span :value="activeIndex" :class="{activedot: index == activeIndex}"  v-for="(team,index) in store.teams" :key="team.id"  class="selected-member"></span>
                     <button @click="showNextSlide"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
         </div>
@@ -158,7 +162,7 @@ export default {
     border-radius: 20px;
     cursor: pointer;
     // DISPLAY ONE CARD
-    display: none;
+    // display: none;
     img{
         border-radius: 20px;
     }
@@ -239,8 +243,15 @@ button:active{
 
 }
 
+
+.team{
+    display: none;
+}
+
 .active{
         display: block;
+        display: flex;
+        gap: 8em;
     }
 
     
