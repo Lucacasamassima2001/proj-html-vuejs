@@ -204,9 +204,6 @@ button:active{
 }
 
 .active{
-        // background-color: $brand-secondary-pink;
-        transform: scale(1.1);
-        // DISPLAY ONE CARD
         display: block;
     }
 

@@ -122,9 +122,18 @@ export default {
     gap: 1em;
 }
 .card.active{
-        // background-color: $brand-secondary-pink;
-        // transform: scale(1.1);
         display: block;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        height: 380px;
+        width: 250px;
+        border: 1px solid lightgrey;
+        border-radius: 20px;
+        padding: 1em;
+        position: relative;
     }
     
     .card:hover{
@@ -132,17 +141,7 @@ export default {
 
     }
 .card{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 380px;
-    width: 250px;
-    border: 1px solid lightgrey;
-    border-radius: 20px;
-    padding: 1em;
-    position: relative;
+    
     display: none;
     h2{
         margin-top: 1em;
