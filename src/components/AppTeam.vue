@@ -74,6 +74,12 @@ export default {
                     <button @click="showNextSlide"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
         </div>
+        <div class="shapes">
+            <img src="../assets/img/shape.png" alt="">
+        </div>
+        <div class="shapes1">
+            <img src="../assets/img/shape2.png" alt="">
+        </div>
   </div>
 </template>
 
@@ -88,8 +94,39 @@ export default {
     text-align: center;
     margin-top: 100px;
     position: relative;
-
     
+    .shapes{
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        
+        img{
+            height: 760px;
+        }
+
+    }
+
+    .shapes1{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+        img{
+            height: 570px;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
     h2{
         margin-bottom: .5em;
         color: $brand-primary-light;
@@ -183,7 +220,6 @@ export default {
     }
 
     .activedot{
-        // background-color: $brand-secondary-pink;
         transform: scale(1.1);
         background-color: $brand-primary-orange;
     }
