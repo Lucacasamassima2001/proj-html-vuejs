@@ -98,11 +98,11 @@ export default {
     .shapes{
         display: flex;
         position: absolute;
-        top: 50px;
-        left: 50px;
+        top: -50px;
+        left: -50px;
         
         img{
-            height: 760px;
+            height: 600px;
         }
 
     }
